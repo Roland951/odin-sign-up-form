@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up-form</title>
+</head>
+<body>
+    <div id="containerAll">
+        <div id="leftContainer">
+            <img class="card-image" src="./Images/star-wars.jpeg" alt="Star Wars">
+            <div class="card-body">
+                <img class="logo" src="./Images/odin-logo.png" alt="Odin Logo">
+                <h1 class="card-heading">
+                    ODIN
+                </h1>
+            </div>
+            <div class="reference">
+                <p>Image by <a class="imageReference" href="https://pixabay.com/users/placidplace-25572496/">Placidplace</a> on <a class="imageReference" href="https://pixabay.com/">Pixabay</a></p>
+            </div>
+
+        </div>
+        <div id="rightContainer">
+            <div id="topRightContainer">
+                <p class="disclaimer">Disclaimer: This is not a real online service!</p>
+                <p class="description">Sign up now and join the Rebellion!</p>
+            </div>
+
+            <div id="middleRightContainer">
+                <h2 class="heading">Create a new account</h2>
+            
+                <form action="" method="get">
+                    <div id="firstLastName">
+                        <div class="textbox">
+                            <label id="name1" for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name" class="textbox" required>
+                        </div>
+                        <div class="textbox">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" class="textbox" required>
+                        </div>
+                    </div>
+
+                    <div id="contactInformation">
+                        <div class="textbox">
+                            <label for="user_email">Email Address</label>
+                            <input type="email" name="user_email" id="user_email" placeholder="you@example.com" class="textbox" required>
+                        </div>
+                        <div class="textbox">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="tel" name="phone_number" id="phone_number" class="textbox"
+                            pattern="[0-9]"
+                            required>
+                        </div>
+                    </div>
+                    <div id="password">
+                        <div class="textbox">
+                            <label for="user_password">Password</label>
+                            <input type="password" name="user_password" id="user_password" class="textbox" required>
+                        </div>
+                        <div class="textbox">
+                            <label for="user_password_confirm">Confirm Password</label>
+                            <input type="password" name="user_password_confirm" id="user_password_confirm" class="textbox" required>
+                        </div>
+                    </div>
+            </div>
+            <div id="bottomRightContainer">
+                    <div>
+                        <button class="signup" type="submit"> Sign up</button>
+                    </div>
+            
+                </form>
+        
+                <div class="login">Already have an account? 
+                    <a href="#">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="javascript.js"></script> 
+</body>
+</html>

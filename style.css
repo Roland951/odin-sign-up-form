@@ -1,0 +1,164 @@
+:root{
+--background-clr: rgb(31, 31, 31);
+--background-center-clr: rgb(35,35,35);
+--card-body-clr: black;
+--text-clr-light: aliceblue;
+--image-width: 40vw;
+--form-width: 100%;
+--margins-right-container: 50px;
+}
+
+@font-face{
+    font-family: Norse-Bold;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
+body{
+    background-color: var(--background-clr);
+    margin: 0;
+    min-height: 100vh;
+}
+
+#containerAll{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#leftContainer{
+    position: relative;
+    text-align: center;
+    width: var(--image-width);
+    color: var(--text-clr-light);
+    z-index: 10;
+    word-break: keep-all;
+}
+
+.card-image{
+    display:flex;
+    position: absolute;
+    width: var(--image-width);
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    z-index: 2;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: var(--image-width);
+    background: var(--card-body-clr);
+    opacity: 0.6;
+    color: var(--text-clr-light);
+    top: 30vh;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Norse-Bold;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.logo{
+    text-align: center;
+    width: 3.6em;
+}
+
+.card-heading{
+    margin-right: 35px;
+}
+
+.reference{
+    position: absolute;
+    width: var(--image-width);
+    bottom: 0px; 
+    z-index: 10;
+}
+
+.imageReference{
+    color: var(--text-clr-light);
+}
+
+#rightContainer{
+    display: flex;
+    flex-direction: column; 
+    color: var(--text-clr-light);
+    width: 60vw;
+}
+
+#topRightContainer{
+    padding: var(--margins-right-container);
+    background-color: var(--background-clr);
+}
+
+#middleRightContainer{
+    padding: var(--margins-right-container);
+    background-color: var(--background-center-clr);
+    box-shadow: 0px 0px 10px -0px lightblue;
+    z-index: 1;
+}
+
+#bottomRightContainer{
+    padding: var(--margins-right-container);
+    background-color: var(--background-clr);
+}
+
+.disclaimer{
+    color: red;
+}
+
+.textbox{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: var(--background-center-clr);
+    border-radius: 15px;
+}
+
+input{
+    margin-top: 2px;
+    border: inset rgb(118, 118, 118) 2px;
+    color: var(--text-clr-light);
+}
+
+input:focus{
+    margin-top: 5px;
+    outline: 1px solid var(--text-clr-light);
+    border: transparent;
+    box-shadow: 0px 2px 5px -0px lightblue;
+}
+
+#firstLastName{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+#contactInformation {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+#password{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.signup{
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: min(200px,100%);
+    background-color: rgb(29, 129, 187);
+    border: solid rgb(48, 65, 48) ;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+a{
+    color: red;
+}

@@ -1,0 +1,1 @@
+This is a sample of a sign up form - for the Rebellion! - and the sixth exercise following The Odin Project course. Skills: HTML, CSS, Flexbox.
